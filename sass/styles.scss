@@ -123,4 +123,141 @@
         box-shadow: 0px 2px 6px 2px #e6e6e6;
     }
 
+    .notice__chiffres {
+        width: 15px;
+        height: 15px;
+        color: white;
+        background-color: #9356DC;
+        border-radius: 20px;
+        margin-left: -13px;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .notice__icons {
+        color: grey;
+        font-size: 20px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .notice__icons--points {
+        margin-right: 0px;
+    }
+
+    .notice__icons--barres {
+        margin-left: 0px;
+    }
+
+    .notice__texte {
+        font-size: 18px;
+    }
+
+    /* GRID RESTAURANTS */
+    .gridindex {
+        width: 100%;
+        height: 600px;
+        background-color: rgb(244, 244, 244);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gridindex__titre {
+        font-size: 30px;
+        margin-top: 40px;
+        margin-bottom: 0px;
+    }
+
+    .gridindex__choix {
+        width: 90%;
+        height: 260px;
+        background-color: white;
+        border-radius: 15px;
+        position: relative;
+        box-shadow: 0px 2px 6px 2px #e6e6e6;
+    }
+
+    .gridindex__photo {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    .gridindex__new {
+        width: 100px;
+        height: 30px;
+        color: #4c746a;
+        background-color: #99e2d0;
+        text-align: center;
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        border-radius: 5px;
+        line-height: 30px;
+        vertical-align: middle;
+    }
+
+    .gridindex__legende {
+        width: 90%;
+        background-color: white;
+        margin-left: auto;
+        margin-right: auto;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .gridindex__nomresto {
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    .gridindex__villeresto {
+        font-weight: lighter;
+    }
+
+    .gridindex__fav--off {
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    /* FOOTER */
+    footer {
+        width: 90%;
+        height: 150px;
+        color: white;
+        background-color: rgb(47, 47, 47);
+        padding: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .footer__lien {
+        color: white;
+    }
+
+    .footer__lien--titre {
+        font-family: 'Shrikhand', cursive;
+        color: white
+    }
+
+    .footer__lien--ligneicon {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .footer__icon {
+        margin-right: 10px;
+    }
+
 }
