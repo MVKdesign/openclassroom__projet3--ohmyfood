@@ -14,35 +14,99 @@
         <main>
 
             <!-- HEADER -->
-            <header>
+            <header class="pagemenu__header">
                 <nav>
-                    <i class="fa-regular fa-arrow-left menu__retour"></i>
+                    <i class="fa fa-arrow-left menu__retour"></i>
                     <h1 class="menu__logo">ohmyfood</h1>
                 </nav>
+                <img src="images/restaurants/palette.jpg" alt="Restaurant La palette du goût" class="entete__photo">
             </header>
 
-            <!-- EN-TÊTE RESTAURANT -->
-            <figure class="entete">
-                <img src="images/restaurants/palette.jpg" alt="Restaurant La palette du goût" class="entete__photo">
-                <figcaption class="entete__legende">
-                    <h3 class="entete__nomresto">La palette du goût</h3>
-                    <div class="menu__fav">
-                        <i class="fa-regular fa-heart menu__fav--off"></i>
-                    </div>
-                </figcaption>
-            </figure>
-
-            <!-- ENTRÉES-->
+            <!-- MENUS-->
             <section class="menu__sections--grid">
-                <h4 class="menu__sections--titres">ENTRÉES</h4>
-                <div class="menu__sections--choix">
-                    <p class="choix__plat">Fricassée d'escargot</p>
-                    <p class="choix__info">Au pimet d'espelette</p>
-                    <p class="choix__prix">25€</p>
+            <!-- EN-TÊTE RESTAURANT -->
+                <h3 class="entete__nomresto">La palette du goût</h3>
+                <div class="menu__fav">
+                    <i class="fa-regular fa-heart menu__fav--off"></i>
                 </div>
+
+                <!-- ENTRÉES-->
+                <article class="menu__sections">
+                    <h4 class="menu__sections--titres">ENTRÉES</h4>
+                    <div class="menu__sections--choix">
+                        <p class="choix__plat">Fricassée d'escargot</p>
+                        <p class="choix__info">Au pimet d'espelette</p>
+                        <p class="choix__prix">25€</p>
+                    </div>
+                    <div class="menu__sections--choix">
+                        <p class="choix__plat">Foie gras de canard mi-cuit</p>
+                        <p class="choix__info">Et ses copeaux de truffe noire</p>
+                        <p class="choix__prix">35€</p>
+                    </div>
+                    <div class="menu__sections--choix">
+                        <p class="choix__plat">Oeuf au plat</p>
+                        <p class="choix__info">Assaisonné à la truffe sur lit de caviar</p>
+                        <p class="choix__prix">20€</p>
+                    </div>
+                </article>
+
+                <!-- PLATS-->
+                <article class="menu__sections">
+                    <h4 class="menu__sections--titres">PLATS</h4>
+                    <div class="menu__sections--choix">
+                        <p class="choix__plat">Filet de boeuf aux herbes</p>
+                        <p class="choix__info">Accompagné de sa ribambelle de légumes</p>
+                        <p class="choix__prix">40€</p>
+                    </div>
+                    <div class="menu__sections--choix">
+                        <p class="choix__plat">Parmentier de queue de boeuf</p>
+                        <p class="choix__info">À  la truffe noire sur sa purée de panais</p>
+                        <p class="choix__prix">35€</p>
+                    </div>
+                    <div class="menu__sections--choix">
+                        <p class="choix__plat">Filet de turbot</p>
+                        <p class="choix__info">Aux agrumes</p>
+                        <p class="choix__prix">44€</p>
+                    </div>
+                </article>
+
+                <!-- DESSERTS-->
+                <article class="menu__sections">
+                    <h4 class="menu__sections--titres">DESSERTS</h4>
+                    <div class="menu__sections--choix">
+                        <p class="choix__plat">Paris-Brest</p>
+                        <p class="choix__info">Revisité</p>
+                        <p class="choix__prix">18€</p>
+                    </div>
+                    <div class="menu__sections--choix">
+                        <p class="choix__plat">Macaron au chocolat d'exception</p>
+                        <p class="choix__info">Et glace à la vanille de Madagascar</p>
+                        <p class="choix__prix">22€</p>
+                    </div>
+                    <div class="menu__sections--choix">
+                        <p class="choix__plat">Mousse au chocolat</p>
+                        <p class="choix__info">Au piment d'Espelette et à la truffe noire</p>
+                        <p class="choix__prix">44€</p>
+                    </div>
+                </article>
 
                 <button class="menu__sections--bouton">Commander</button>
             </section>
+
+            <!-- FOOTER -->
+            <footer class="footer__pagesmenus">
+                <p class="footer__lien--titre">ohmyfood</p>
+                <div class="footer__lien--ligneicon">
+                    <i class="fa fa-utensils footer__icon"></i>
+                    <p><a href="#" class="footer__lien">Proposer un restaurant</a></p>
+                </div>
+                <div class="footer__lien--ligneicon">
+                    <i class="fa fa-handshake-angle footer__icon"></i>
+                    <p><a href="#" class="footer__lien">Devenir partenaire</a></p>
+                </div>
+                <p><a href="#" class="footer__lien">Mentions légales</a></p>
+                <p><a href="mailto:contact@ohmyfood.com" class="footer__lien">Contact</a></p>
+            </footer>
 
 
         </main>
