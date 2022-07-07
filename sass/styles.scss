@@ -18,6 +18,11 @@
         text-decoration: none;
     }
 
+    a:visited {
+        text-decoration: none;
+        color: black;
+    }
+
     p {
         margin: 0px;
     }
@@ -291,7 +296,7 @@
         margin-right: 10px;
     }
 
-    /* MENU LA PALETTE DU GOÛT */
+    /* MENU DES RESTAURANTS */
     /* HEADER */
     .pagemenu__header {
         width: 100%;
@@ -302,8 +307,9 @@
     }
 
     .menu__retour {
-        margin-top: auto;
-        margin-bottom: auto;
+        position: absolute;
+        left: 5%;
+        top: 30px;
     }
 
     .entete__photo {
@@ -319,13 +325,13 @@
     }
 
     .entete__nomresto {
-        font-size: 20px;
+        font-size: 22px;
         font-family: 'Shrikhand', cursive;
         margin-left: 20px;
     }
 
     .menu__fav {
-        font-size: 20px;
+        font-size: 22px;
         margin-right: 20px;
     }
 
@@ -350,6 +356,17 @@
         margin-top: 0px;
         margin-left: auto;
         margin-right: auto;
+        position: relative;
+    }
+
+    .menu__sections--titres::after {
+        content: "";
+        width: 35px;
+        height: 3px;
+        background-color: #99e2d0;
+        position: absolute;
+        left: 0px;
+        top: 20px;
     }
 
     .menu__sections--choix {
@@ -394,7 +411,7 @@
     .menu__sections--bouton {
         width: 40%;
         height: 45px;
-        font-size: 18px;
+        font-size: 15px;
         color: white;
         background: linear-gradient(#FF79DA, #9356DC);
         border: none;
@@ -409,5 +426,11 @@
     .footer__pagesmenus {
         margin-top: 950px;
     }
+
+}
+
+/* VERSION TABLETTE */
+
+@media screen and (min-width : 700px) and (max-width: 1023px) {
 
 }
