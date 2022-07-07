@@ -35,11 +35,13 @@
   .header__explorer {
     width: 100%;
     height: 340px;
+    margin-bottom: 30px;
   }
   .header__location {
     width: 100%;
     height: 45px;
     font-size: 15px;
+    font-weight: bold;
     background-color: rgb(230, 230, 230);
     display: flex;
     justify-content: center;
@@ -78,7 +80,7 @@
     background: linear-gradient(#FF79DA, #9356DC);
     border: none;
     border-radius: 20px;
-    box-shadow: 0px 5px 10px 4px #cccccc;
+    box-shadow: 0px 5px 10px 4px #b9b9b9;
   }
   /* FONCTIONNEMENT */
   .notice {
@@ -130,6 +132,13 @@
   }
   .notice__texte {
     font-size: 18px;
+    font-weight: bold;
+  }
+  .notice__ordre--violet {
+    background-color: #e7e1ee;
+  }
+  .notice__icons--resto {
+    color: #9356DC;
   }
   /* GRID RESTAURANTS */
   .gridindex {
@@ -141,14 +150,20 @@
     align-items: center;
   }
   .gridindex__titre {
+    width: 90%;
+    text-align: left;
     font-size: 30px;
     margin-top: 40px;
-    margin-bottom: 0px;
+    margin-bottom: 20px;
+  }
+  .gridindex__lien {
+    width: 90%;
   }
   .gridindex__choix {
-    width: 90%;
+    width: 100%;
     height: 260px;
     background-color: white;
+    margin: 0px;
     border-radius: 15px;
     position: relative;
     box-shadow: 0px 2px 6px 2px #e6e6e6;
@@ -163,6 +178,7 @@
   .gridindex__new {
     width: 100px;
     height: 30px;
+    font-weight: bold;
     color: #4c746a;
     background-color: #99e2d0;
     text-align: center;
@@ -181,16 +197,23 @@
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
   }
   .gridindex__nomresto {
+    width: 80%;
     font-size: 20px;
     margin-top: 10px;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
   }
   .gridindex__villeresto {
-    font-weight: lighter;
+    width: 80%;
+    font-weight: normal;
+  }
+  .gridindex__fav {
+    width: 20%;
+    text-align: right;
   }
   .gridindex__fav--off {
     font-size: 30px;
