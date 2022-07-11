@@ -912,9 +912,7 @@
 
 /* VERSION DESKTOP VERSION DESKTOP VERSION DESKTOP VERSION DESKTOP VERSION DESKTOP VERSION DESKTOP */
 
-@media screen and (max-width: 1920) {
-    
-    /* PAGE D'ACCUEIL */
+/* PAGE D'ACCUEIL */
     /* CORPS DU SITE*/
     body {
         width: 100%;
@@ -1019,21 +1017,22 @@
     /* FONCTIONNEMENT */
     .notice {
         width: 100%;
-        height: 420px;
+        height: 240px;
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
     }
 
     .notice__titre {
+        width: 90%;
         font-size: 20px;
         margin-left: auto;
         margin-right: auto;
         margin-top: 50px;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
     }
 
     .notice__ordre {
-        width: 60%;
+        width: 25%;
         height: 70px;
         background-color: rgb(244, 244, 244);
         border-radius: 20px;
@@ -1256,7 +1255,7 @@
     /* SECTIONS DES MENUS */
     .menu__sections--grid {
         width: 100%;
-        height: 980px;
+        height: 500px;
         background-color: rgb(230, 230, 230);
         display: flex;
         justify-content: center;
@@ -1268,7 +1267,7 @@
 
     .menu__sections--gridlong {
         width: 100%;
-        height: 1050px;
+        height: 580px;
         background-color: rgb(230, 230, 230);
         display: flex;
         justify-content: center;
@@ -1299,7 +1298,7 @@
     }
 
     .menu__sections {
-        width: 60%;
+        width: 28%;
         display: flex;
         flex-direction: column;
         margin-left: auto;
@@ -1361,10 +1360,9 @@
     }
 
     .footer__pagesmenus {
-        margin-top: 950px;
+        margin-top: 500px;
     }
 
     .footer__pagesmenuslong {
-        margin-top: 1020px;
+        margin-top: 560px;
     }
-}
