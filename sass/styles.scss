@@ -1,7 +1,5 @@
 /* VERSION MOBILE */
 
-@media screen and (max-width: 700px) {
-
     /* PAGE D'ACCUEIL */
     /* CORPS DU SITE*/
     body {
@@ -104,6 +102,11 @@
         box-shadow: 0px 5px 10px 4px #b9b9b9;
     }
 
+    .explorer__bouton:hover {
+        background: linear-gradient(#fe9de3, #a172da);
+        box-shadow: 0px 5px 10px 4px #999999;
+    }
+
     /* FONCTIONNEMENT */
     .notice {
         width: 100%;
@@ -204,6 +207,11 @@
         border-radius: 15px;
         position: relative;
         box-shadow: 0px 2px 6px 2px #e6e6e6;
+    }
+
+    .gridindex__choix:hover {
+        filter: brightness(115%);
+        box-shadow: 0px 2px 6px 2px #999999;
     }
 
     .gridindex__photo {
@@ -448,8 +456,6 @@
         margin-top: 1020px;
     }
 
-}
-
 /* VERSION TABLETTE VERSION TABLETTE VERSION TABLETTE VERSION TABLETTE VERSION TABLETTE */
 
 @media screen and (min-width : 700px) and (max-width: 1023px) {
@@ -556,6 +562,11 @@
         box-shadow: 0px 5px 10px 4px #b9b9b9;
     }
 
+    .explorer__bouton:hover {
+        background: linear-gradient(#fe9de3, #a172da);
+        box-shadow: 0px 5px 10px 4px #999999;
+    }
+
     /* FONCTIONNEMENT */
     .notice {
         width: 100%;
@@ -658,6 +669,11 @@
         border-radius: 15px;
         position: relative;
         box-shadow: 0px 2px 6px 2px #e6e6e6;
+    }
+
+    .gridindex__choix:hover {
+        filter: brightness(115%);
+        box-shadow: 0px 2px 6px 2px #999999;
     }
 
     .gridindex__photo {
@@ -912,6 +928,7 @@
 
 /* VERSION DESKTOP VERSION DESKTOP VERSION DESKTOP VERSION DESKTOP VERSION DESKTOP VERSION DESKTOP */
 
+@media screen and (min-width : 1024px) {
 /* PAGE D'ACCUEIL */
     /* CORPS DU SITE*/
     body {
@@ -1012,6 +1029,11 @@
         border: none;
         border-radius: 20px;
         box-shadow: 0px 5px 10px 4px #b9b9b9;
+    }
+
+    .explorer__bouton:hover {
+        background: linear-gradient(#fe9de3, #a172da);
+        box-shadow: 0px 5px 10px 4px #999999;
     }
 
     /* FONCTIONNEMENT */
@@ -1117,6 +1139,11 @@
         border-radius: 15px;
         position: relative;
         box-shadow: 0px 2px 6px 2px #e6e6e6;
+    }
+
+    .gridindex__choix:hover {
+        filter: brightness(115%);
+        box-shadow: 0px 2px 6px 2px #999999;
     }
 
     .gridindex__photo {
@@ -1366,3 +1393,4 @@
     .footer__pagesmenuslong {
         margin-top: 560px;
     }
+}
