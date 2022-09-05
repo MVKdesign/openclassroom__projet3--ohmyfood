@@ -113,6 +113,7 @@ main {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 a:visited {
@@ -362,18 +363,38 @@ nav {
   font-weight: normal;
 }
 
+/* COEUR FAVORI */
 .gridindex__fav {
   width: 20%;
   text-align: right;
+  position: relative;
 }
 
 .gridindex__fav--off {
   font-size: 25px;
   cursor: pointer;
+  position: absolute;
+  right: 5%;
+  bottom: -10px;
+  color: inherit;
+  overflow: hidden;
 }
 
 .gridindex__fav--on {
   font-size: 25px;
+  cursor: pointer;
+  opacity: 0;
+  position: absolute;
+  right: 5%;
+  bottom: -10px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gridindex__fav--on:hover {
+  opacity: 100%;
+  transition: opacity 0.6s ease-in-out;
 }
 
 /* FOOTER */
@@ -436,14 +457,17 @@ footer {
 }
 
 .entete__nomresto {
+  width: 69%;
   font-size: 22px;
   font-family: "Shrikhand", cursive;
-  margin-left: 20px;
+  margin-left: 8%;
 }
 
 .menu__fav {
-  font-size: 22px;
-  margin-right: 20px;
+  width: 15%;
+  text-align: right;
+  position: relative;
+  margin-right: 8%;
 }
 
 /* SECTIONS DES MENUS */
@@ -895,13 +919,34 @@ footer {
     font-size: 15px;
     font-weight: normal;
   }
+  /* COEUR FAVORI */
   .gridindex__fav {
     width: 20%;
     text-align: right;
+    position: relative;
   }
   .gridindex__fav--off {
     font-size: 25px;
     cursor: pointer;
+    position: absolute;
+    right: 5%;
+    bottom: -5px;
+    color: inherit;
+    overflow: hidden;
+  }
+  .gridindex__fav--on {
+    cursor: pointer;
+    opacity: 0;
+    position: absolute;
+    right: 5%;
+    bottom: -5px;
+    background: linear-gradient(#FF79DA, #9356DC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .gridindex__fav--on:hover {
+    opacity: 100%;
+    transition: opacity 0.6s ease-in-out;
   }
   /* FOOTER */
   footer {
@@ -957,17 +1002,16 @@ footer {
     margin: 0px;
   }
   .entete__nomresto {
-    width: 75%;
+    width: 69%;
     font-size: 22px;
     font-family: "Shrikhand", cursive;
-    margin-left: 5%;
+    margin-left: 8%;
   }
   .menu__fav {
     width: 15%;
-    font-size: 22px;
     text-align: right;
-    margin-right: 5%;
-    margin-top: 22px;
+    position: relative;
+    margin-right: 8%;
   }
   /* SECTIONS DES MENUS */
   .menu__sections--grid {
@@ -1413,6 +1457,7 @@ footer {
     font-size: 15px;
     font-weight: normal;
   }
+  /* COEUR FAVORI */
   .gridindex__fav {
     width: 20%;
     text-align: right;
@@ -1422,12 +1467,24 @@ footer {
     font-size: 25px;
     cursor: pointer;
     position: absolute;
+    right: 5%;
+    bottom: -5px;
     color: inherit;
     overflow: hidden;
   }
   .gridindex__fav--on {
     cursor: pointer;
+    opacity: 0;
     position: absolute;
+    right: 5%;
+    bottom: -5px;
+    background: linear-gradient(#FF79DA, #9356DC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .gridindex__fav--on:hover {
+    opacity: 100%;
+    transition: opacity 0.6s ease-in-out;
   }
   /* FOOTER */
   footer {
@@ -1483,17 +1540,16 @@ footer {
     margin: 0px;
   }
   .entete__nomresto {
-    width: 75%;
+    width: 69%;
     font-size: 22px;
     font-family: "Shrikhand", cursive;
-    margin-left: 5%;
+    margin-left: 8%;
   }
   .menu__fav {
     width: 15%;
-    font-size: 22px;
     text-align: right;
-    margin-right: 5%;
-    margin-top: 22px;
+    position: relative;
+    margin-right: 8%;
   }
   /* SECTIONS DES MENUS */
   .menu__sections--grid {
@@ -1538,7 +1594,7 @@ footer {
   .menu__sections {
     width: 28%;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     margin-left: auto;
     margin-right: auto;
   }
@@ -1563,12 +1619,8 @@ footer {
     flex-wrap: wrap;
     box-shadow: 0px 2px 6px 2px #b9b9b9;
     cursor: pointer;
-  }
-  .menu__sections--choix:hover .choix__checkbox {
-    opacity: 100%;
-  }
-  .menu__sections--choix:hover .choix__checkbox--check {
-    transform: rotate(0deg);
+    position: relative;
+    overflow: hidden;
   }
   .choix__plat {
     max-width: 80%;
@@ -1607,26 +1659,19 @@ footer {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    position: relative;
-    top: -70px;
-    left: 98%;
-    overflow: hidden;
-  }
-  .choix__checkbox::after {
-    content: "";
-    display: block;
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
-    transition: 0.35s ease-in-out;
-    transition-property: left;
-    left: 100%;
+    opacity: 0;
+    -webkit-transition: all 400ms ease-out;
+    -moz-transition: all 400ms ease-out;
+    -o-transition: all 400ms ease-out;
+    -ms-transition: all 400ms ease-out;
+    transition-delay: 0s;
+    transition-duration: 0.4s;
   }
-  .choix__checkbox:hover:after {
-    left: 0%;
+  .choix__checkbox:hover {
+    opacity: 1;
+    transform: translateX(-100px);
+    -webkit-transform: translateX(-100px);
   }
   .choix__checkbox--check {
     font-size: 25px;
