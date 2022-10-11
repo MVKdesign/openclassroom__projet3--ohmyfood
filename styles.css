@@ -514,7 +514,7 @@ footer {
   top: 20px;
 }
 
-.menu__section {
+.menu__sections {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -522,7 +522,7 @@ footer {
 
 /* ANIMATION APPARITION */
 .menu__sections--choix {
-  width: 95%;
+  width: 90%;
   height: 55px;
   background-color: white;
   margin-left: auto;
@@ -572,6 +572,12 @@ footer {
     opacity: 100%;
   }
 }
+/* Apparition des points */
+.menu__sections--choix:hover .choix__texte {
+  transition: width 0.5s ease-in-out;
+  width: 60%;
+}
+
 .menu__sections--choix:hover .choix__prix {
   transform: translateX(-80px);
 }
@@ -579,6 +585,10 @@ footer {
 .menu__sections--choix:hover .choix__checkbox {
   opacity: 1;
   transform: translateX(-97px);
+}
+
+.menu__sections--choix:hover .choix__checkbox--check {
+  transform: rotate(360deg);
 }
 
 .choix__texte {
@@ -626,7 +636,7 @@ footer {
 
 /* BOUTONS CHECKBOX */
 .choix__checkbox {
-  width: 80px;
+  width: 40px;
   height: 55px;
   text-align: center;
   background-color: #99e2d0;
@@ -637,24 +647,21 @@ footer {
   align-items: center;
   cursor: pointer;
   position: absolute;
-  margin-left: 105%;
+  margin-left: 90%;
   opacity: 0;
   transition-delay: 0s;
   transition-duration: 1s;
+  overflow: hidden;
 }
 
 .choix__checkbox--check {
   font-size: 25px;
   color: white;
-  animation: spin 4s linear;
+  transition-delay: 0s;
+  transition-duration: 3s;
+  overflow: hidden;
 }
 
-@keyframes spin {
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
 .choix__plat {
   width: 300px;
   font-size: 14px;
@@ -1216,12 +1223,20 @@ footer {
       opacity: 100%;
     }
   }
+  /* Apparition des points */
+  .menu__sections--choix:hover .choix__texte {
+    transition: width 0.5s ease-in-out;
+    width: 60%;
+  }
   .menu__sections--choix:hover .choix__prix {
     transform: translateX(-80px);
   }
   .menu__sections--choix:hover .choix__checkbox {
     opacity: 1;
     transform: translateX(-97px);
+  }
+  .menu__sections--choix:hover .choix__checkbox--check {
+    transform: rotate(360deg);
   }
   .choix__texte {
     width: 80%;
@@ -1275,7 +1290,7 @@ footer {
     align-items: center;
     cursor: pointer;
     position: absolute;
-    margin-left: 105%;
+    margin-left: 102%;
     opacity: 0;
     transition-delay: 0s;
     transition-duration: 1s;
@@ -1283,13 +1298,8 @@ footer {
   .choix__checkbox--check {
     font-size: 25px;
     color: white;
-    animation: spin 4s linear;
-  }
-  @keyframes spin {
-    100% {
-      -webkit-transform: rotate(360deg);
-      transform: rotate(360deg);
-    }
+    transition-delay: 0s;
+    transition-duration: 3s;
   }
   .menu__sections--bouton {
     width: 40%;
@@ -1673,14 +1683,14 @@ footer {
   }
   /* FOOTER */
   footer {
-    width: 90%;
+    width: 84%;
     height: 150px;
     color: white;
     background-color: rgb(47, 47, 47);
     padding-top: 5%;
     padding-bottom: 5%;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 8%;
+    padding-right: 8%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1725,7 +1735,7 @@ footer {
     margin: 0px;
   }
   .entete__nomresto {
-    width: 76%;
+    width: 69%;
     font-size: 22px;
     font-family: "Shrikhand", cursive;
     margin-left: 0%;
@@ -1780,8 +1790,8 @@ footer {
     width: 28%;
     display: flex;
     flex-wrap: wrap;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 10px;
+    margin-right: 10px;
   }
   .menu__sections--choixlong {
     width: 28%;
@@ -1837,12 +1847,20 @@ footer {
       opacity: 100%;
     }
   }
+  /* Apparition des points */
+  .menu__sections--choix:hover .choix__texte {
+    transition: width 0.5s ease-in-out;
+    width: 60%;
+  }
   .menu__sections--choix:hover .choix__prix {
-    transform: translateX(-80px);
+    transform: translateX(-60px);
   }
   .menu__sections--choix:hover .choix__checkbox {
     opacity: 1;
     transform: translateX(-97px);
+  }
+  .menu__sections--choix:hover .choix__checkbox--check {
+    transform: rotate(360deg);
   }
   .choix__texte {
     width: 80%;
@@ -1852,7 +1870,7 @@ footer {
     margin-top: 10px;
   }
   .choix__plat {
-    max-width: 100%;
+    width: 100%;
     font-size: 14px;
     font-weight: bold;
     margin-bottom: 3px;
@@ -1861,7 +1879,7 @@ footer {
     overflow: hidden;
   }
   .choix__info {
-    max-width: 100%;
+    width: 100%;
     font-size: 12px;
     font-weight: normal;
     color: #919090;
@@ -1885,7 +1903,7 @@ footer {
   }
   /* BOUTONS CHECKBOX */
   .choix__checkbox {
-    width: 80px;
+    width: 60px;
     height: 55px;
     text-align: center;
     background-color: #99e2d0;
@@ -1896,21 +1914,18 @@ footer {
     align-items: center;
     cursor: pointer;
     position: absolute;
-    margin-left: 105%;
+    margin-left: 111%;
     opacity: 0;
     transition-delay: 0s;
     transition-duration: 1s;
+    overflow: hidden;
   }
   .choix__checkbox--check {
     font-size: 25px;
     color: white;
-    animation: spin 4s linear;
-  }
-  @keyframes spin {
-    100% {
-      -webkit-transform: rotate(360deg);
-      transform: rotate(360deg);
-    }
+    overflow: hidden;
+    transition-delay: 0s;
+    transition-duration: 3s;
   }
   .menu__sections--bouton {
     width: 20%;
@@ -1939,7 +1954,7 @@ footer {
   }
   .menu__sections--choix:hover .choix__checkbox {
     opacity: 1;
-    transform: translateX(-90px);
+    transform: translateX(-88px);
   }
 }
 /* POUR LA VERSION 1920PX POUR LA VERSION 1920PX POUR LA VERSION 1920PX POUR LA VERSION 1920PX */
@@ -1986,11 +2001,11 @@ footer {
     width: 20%;
   }
   .menu__sections--choix:hover .choix__prix {
-    transform: translateX(-96px);
+    transform: translateX(-65px);
   }
   .menu__sections--choix:hover .choix__checkbox {
     opacity: 1;
-    transform: translateX(-104px);
+    transform: translateX(-115px);
   }
 }
 

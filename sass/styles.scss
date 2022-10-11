@@ -524,7 +524,7 @@
         top: 20px;
     }
 
-    .menu__section {
+    .menu__sections {
         width: 100%;
         margin-left: auto;
         margin-right: auto;
@@ -533,7 +533,7 @@
     /* ANIMATION APPARITION */
 
     .menu__sections--choix {
-        width: 95%;
+        width: 90%;
         height: 55px;
         background-color: white;
         margin-left: auto;
@@ -585,6 +585,12 @@
         }
     }
 
+    /* Apparition des points */
+    .menu__sections--choix:hover .choix__texte {
+        transition: width 0.5s ease-in-out;
+        width: 60%;
+    }
+
     .menu__sections--choix:hover .choix__prix {
         transform: translateX(-80px);
     }
@@ -592,6 +598,10 @@
     .menu__sections--choix:hover .choix__checkbox {
         opacity: 1;
         transform: translateX(-97px);
+    }
+
+    .menu__sections--choix:hover .choix__checkbox--check {
+        transform: rotate(360deg);
     }
 
     .choix__texte {
@@ -639,7 +649,7 @@
 
     /* BOUTONS CHECKBOX */
     .choix__checkbox {
-        width: 80px;
+        width: 40px;
         height: 55px;
         text-align: center;
         background-color: #99e2d0;
@@ -650,19 +660,20 @@
         align-items: center;
         cursor: pointer;
         position: absolute;
-        margin-left: 105%;
+        margin-left: 90%;
         opacity: 0;
         transition-delay: 0s;
         transition-duration: 1s;
+        overflow: hidden;
     }
 
     .choix__checkbox--check {
         font-size: 25px;
         color: white;
-        animation:spin 4s linear ;
+        transition-delay: 0s;
+        transition-duration: 3s;
+        overflow: hidden;
     }
-
-    @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
     .choix__plat {
         width: 300px;
@@ -1305,6 +1316,12 @@
         }
     }
 
+    /* Apparition des points */
+    .menu__sections--choix:hover .choix__texte {
+        transition: width 0.5s ease-in-out;
+        width: 60%;
+    }
+
     .menu__sections--choix:hover .choix__prix {
         transform: translateX(-80px);
     }
@@ -1312,6 +1329,10 @@
     .menu__sections--choix:hover .choix__checkbox {
         opacity: 1;
         transform: translateX(-97px);
+    }
+
+    .menu__sections--choix:hover .choix__checkbox--check {
+        transform: rotate(360deg);
     }
 
     .choix__texte {
@@ -1370,7 +1391,7 @@
         align-items: center;
         cursor: pointer;
         position: absolute;
-        margin-left: 105%;
+        margin-left: 102%;
         opacity: 0;
         transition-delay: 0s;
         transition-duration: 1s;
@@ -1379,10 +1400,9 @@
     .choix__checkbox--check {
         font-size: 25px;
         color: white;
-        animation:spin 4s linear ;
+        transition-delay: 0s;
+        transition-duration: 3s;
     }
-
-    @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
     .menu__sections--bouton {
         width: 40%;
@@ -1825,14 +1845,14 @@
 
     /* FOOTER */
     footer {
-        width: 90%;
+        width: 84%;
         height: 150px;
         color: white;
         background-color: rgb(47, 47, 47);
         padding-top: 5%;
         padding-bottom: 5%;
-        padding-left: 5%;
-        padding-right: 5%;
+        padding-left: 8%;
+        padding-right: 8%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -1886,7 +1906,7 @@
     }
 
     .entete__nomresto {
-        width: 76%;
+        width: 69%;
         font-size: 22px;
         font-family: 'Shrikhand', cursive;
         margin-left: 0%;
@@ -1947,8 +1967,8 @@
         width: 28%;
         display: flex;
         flex-wrap: wrap;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
     .menu__sections--choixlong {
@@ -2014,13 +2034,23 @@
         }
     }
 
+    /* Apparition des points */
+    .menu__sections--choix:hover .choix__texte {
+        transition: width 0.5s ease-in-out;
+        width: 60%;
+    }
+
     .menu__sections--choix:hover .choix__prix {
-        transform: translateX(-80px);
+        transform: translateX(-60px);
     }
 
     .menu__sections--choix:hover .choix__checkbox {
         opacity: 1;
         transform: translateX(-97px);
+    }
+
+    .menu__sections--choix:hover .choix__checkbox--check {
+        transform: rotate(360deg);
     }
 
     .choix__texte {
@@ -2032,7 +2062,7 @@
     }
 
     .choix__plat {
-        max-width: 100%;
+        width: 100%;
         font-size: 14px;
         font-weight: bold;
         margin-bottom: 3px;
@@ -2042,7 +2072,7 @@
     }
 
     .choix__info {
-        max-width: 100%;
+        width: 100%;
         font-size: 12px;
         font-weight: normal;
         color: #919090;
@@ -2068,7 +2098,7 @@
 
     /* BOUTONS CHECKBOX */
     .choix__checkbox {
-        width: 80px;
+        width: 60px;
         height: 55px;
         text-align: center;
         background-color: #99e2d0;
@@ -2079,19 +2109,20 @@
         align-items: center;
         cursor: pointer;
         position: absolute;
-        margin-left: 105%;
+        margin-left: 111%;
         opacity: 0;
         transition-delay: 0s;
         transition-duration: 1s;
+        overflow: hidden;
     }
 
     .choix__checkbox--check {
         font-size: 25px;
         color: white;
-        animation:spin 4s linear ;
+        overflow: hidden;
+        transition-delay: 0s;
+        transition-duration: 3s;
     }
-
-    @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
     .menu__sections--bouton {
         width: 20%;
@@ -2124,7 +2155,7 @@
 
     .menu__sections--choix:hover .choix__checkbox {
         opacity: 1;
-        transform: translateX(-90px);
+        transform: translateX(-88px);
     }
 }
 
@@ -2178,11 +2209,11 @@
     }
 
     .menu__sections--choix:hover .choix__prix {
-        transform: translateX(-96px);
+        transform: translateX(-65px);
     }
     
     .menu__sections--choix:hover .choix__checkbox {
         opacity: 1;
-        transform: translateX(-104px);
+        transform: translateX(-115px);
     }
 }
